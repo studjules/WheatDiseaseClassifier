@@ -38,7 +38,12 @@
         <h1>Wheat Disease Classifier</h1>
 
         <!-- Display the image at the top -->
-        <img src="{{ image_url }}" alt="Sample Image" class="img-fluid" style="max-width: 100%; border-radius: 10px;">
+        <!-- Reference the image from the static folder -->
+        <img src="{{ url_for('static', filename='classes_labels.png') }}"
+             alt="Class Labels"
+             class="img-fluid"
+             style="max-width: 100%; border-radius: 10px;">
+
 
         <p>Upload an image to classify:</p>
 
